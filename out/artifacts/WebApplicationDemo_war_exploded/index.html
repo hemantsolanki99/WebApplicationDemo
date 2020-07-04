@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Java Web App</title>
+</head>
+<body>
+    <h1>Welcome to Easyweb...</h1>
+    <h2><font color="red">Registration Page</font></h2>
+
+    <form action="MyFirstServlet" method="post">
+
+        <label>First Name : </label> <input type="text" id="fname" name="fname" required>
+        <br /><br />
+        <label>Last Name : </label> <input type="text" id="lname" name="lname" required>
+        <br /><br />
+        <label>Email ID : </label> <input type="email" id="email" name="email" required>
+        <br /><br />
+        <label>Gender : </label>
+            <input type="radio" id="male" name="gender" value="male" required /> Male
+            <input type="radio" id="female" name="gender" value="female" required /> Female
+        <br /><br />
+        <label>Country : </label>
+        <select name="country" id="country" required>
+            <optgroup>
+                <option selected disabled>Select Country </option>
+            </optgroup>
+            <optgroup>
+                <option value="in">India</option>
+                <option value="usa">USA</option>
+                <option value="br">Britain</option>
+            </optgroup>
+        </select>
+        <br /><br />
+        <label>Password :</label> <input type="password" id="password" name="password" required minlength="6">
+        <br /><br />
+        <button type="submit" name="submit">Submit</button>
+
+    </form>
+</body>
+</html>
